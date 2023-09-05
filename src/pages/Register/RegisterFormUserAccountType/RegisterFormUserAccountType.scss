@@ -1,0 +1,113 @@
+// RegisterFormUserAccountType.scss
+
+.Form_UserAccountType {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 26px;
+        font-weight: 900;
+        font-family: 'Mulish', sans-serif;
+        color: #7f58e2;
+        margin-top: 20px;
+    }
+}
+
+.Form_UserAccountType_Container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .Form_UserAccountType__Corretor,
+    .Form_UserAccountType__Estudante {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        border: 1px solid #e7d2f9;
+        cursor: pointer;
+        background-color: #f7effe;
+        border-radius: 6px;
+        height: 120px;
+        width: 180px;
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+        margin-left: 26px;
+        margin-right: 26px;
+
+        &.selected {
+            background-color: #6a4eff;
+            border-color: #7f58e2;
+
+            svg,
+            span {
+                color: #ffffff;
+            }
+        }
+
+        &:hover {
+            background-color: #e7d2f9;
+            border-color: #d2b0ff;
+        }
+
+        svg {
+            color: #7f58e2;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-family: 'Mulish', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #7f58e2;
+        }
+    }
+
+}
+
+.Form_UserAccountType_Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+    button {
+        background-color: #7f58e2;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 48%;
+        box-sizing: border-box;
+        border: 1px solid #7f58e2;
+        border-radius: 10px;
+        padding: 12px 24px;
+        font-size: 16px;
+        min-height: 60px;
+        line-height: 1.8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 700;
+        outline: none;
+
+
+        &:hover {
+            background-color: #6a4eff;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        color: #5546a0;
+        margin-top: 16px;
+
+        a {
+            color: #6a4eff;
+            text-decoration: none;
+        }
+    }
+}

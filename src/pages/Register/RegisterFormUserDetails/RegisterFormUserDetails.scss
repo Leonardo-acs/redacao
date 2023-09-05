@@ -1,0 +1,106 @@
+.Form_UserDetails {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    font-family: 'Mulish', sans-serif;
+
+    h1 {
+        color: #7f58e2;
+        font-weight: 900;
+        font-size: 26px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    input {
+        max-width: 90%;
+        height: 40px;
+        margin-bottom: 12px;
+        font-weight: 700 bold;
+        font-size: 16px;
+        line-height: 1.8px;
+        color: #7f58e2;
+        border-radius: 6px;
+        border: 2px solid #f1f1f1;
+        text-decoration: none;
+    }
+
+    input:focus {
+        outline: 2px solid #9999FF;
+
+    }
+
+
+}
+
+.Form_UserDetails_NavButtons {
+    display: flex;
+    width: 100%;
+
+    .GoBack_Button {
+        background-color: transparent;
+        text-transform: uppercase;
+        color: #000000;
+        width: 40%;
+        box-sizing: border-box;
+        border: 1px solid #7f58e2;
+        border-radius: 10px;
+        font-size: 16px;
+        min-height: 50px;
+        line-height: 1.8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 700;
+        margin-left: 12px;
+
+        &:hover {
+            border: 2px solid #6a4eff;
+        }
+
+    }
+
+    .Next_Button {
+        background-color: #7f58e2;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 40%;
+        box-sizing: border-box;
+        border: 1px solid #7f58e2;
+        border-radius: 10px;
+        font-size: 16px;
+        min-height: 50px;
+        line-height: 1.8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 700;
+        outline: none;
+        margin-left: 12px;
+
+        &:hover {
+            background-color: #6a4eff;
+        }
+
+    }
+}
+
+
+.Form_UserDetails_Footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    p {
+        font-size: 14px;
+        color: #5546a0;
+        margin-top: 16px;
+
+        a {
+            color: #6a4eff;
+            text-decoration: none;
+        }
+    }
+}

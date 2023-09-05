@@ -1,0 +1,136 @@
+.LoginForm {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 928px;
+    max-width: 100%;
+    height: 500px;
+    border-radius: 8px;
+}
+
+.LoginForm_Container_Form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .LoginForm_Container_Form_Header {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        width: 100%;
+
+        .LoginForm_Container__button {
+            cursor: pointer;
+            margin-right: 10px;
+            background-color: #ffffff;
+            text-decoration: none;
+            border: 1px solid #E7D2F9; //#E7D2F9;
+            font-family: 'Nunito';
+            font-weight: bold;
+            color: #333;
+            border-radius: 50px;
+            height: 44px;
+            width: 180px;
+
+            &.selected {
+                background-color: #E7D2F9;
+                border: 1px solid #E7D2F9; //#E7D2F9;
+            }
+        }
+    }
+
+    .LoginForm_Container_Form_Body {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.4);
+
+        input {
+            display: flex;
+            margin-bottom: 10px;
+            height: 44px;
+            border: 1px solid #DDDFE2;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: 'Nunito', sans-serif;
+            color: #333;
+        }
+
+        input:focus {
+            outline: 1px solid #DDDFE2;
+        }
+
+    }
+
+}
+
+
+.LoginForm_Container_Form_Remider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.LoginForm_Container_Form_Footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+
+    .Button__Access {
+        cursor: pointer;
+        margin-right: 10px;
+        background-color: #E7D2F9;
+        text-decoration: none;
+        border: 1px solid #E7D2F9;
+        font-family: 'Nunito';
+        font-weight: bold;
+        color: #333;
+        border-radius: 50px;
+        height: 44px;
+        text-transform: uppercase;
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .Button__Create_Account {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 10px;
+        background-color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #E7D2F9;
+        font-family: 'Nunito';
+        font-weight: bold;
+        color: #333;
+        border-radius: 50px;
+        height: 44px;
+        text-transform: uppercase;
+        width: 120px;
+    }
+}
+
+.LoginForm_Container_Image {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    img {
+        width: 360px;
+        height: 360px;
+    }
+}
