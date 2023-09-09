@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../assets/images/login_form_logo.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 export default function LoginForm() {
     const [login, setLogin] = useState("");
     const [userPassword, setUserPassword] = useState("");
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-
-    const handleLogin = async () => {
+    const history = useNavigate();
+    const handleLogin = () => {
         try {
             axios.post(`http://127.0.0.1:8000/api/login?email=${login}&password=${userPassword}`)
-              .then(function (response) {
-                <Link to={"/main"}></Link>
-              })
-              .catch(function (error) {
-                console.log(error);
-              });
+                .then((response) => {
+                    history('/main')
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
         } catch (error) {
             console.error('Erro na requisição:', error);
         }
