@@ -9,7 +9,8 @@ export default {
   ],
   theme: {
     extend: {
-      'mulish': ["Mulish",  "sans-serif"]
+      'mulish': ["Mulish",  "sans-serif"],
+      'nunito': ["Nunito",  "sans-serif"],
     },
   },
   plugins: [],

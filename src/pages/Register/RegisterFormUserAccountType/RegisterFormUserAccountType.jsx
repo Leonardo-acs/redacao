@@ -1,8 +1,6 @@
-
-import './RegisterFormUserAccountType.scss';
+// import './RegisterFormUserAccountType.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenRuler, faChalkboardUser } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 export default function RegisterFormUserAccountType({nextStep, setUserData, userData}) {
     const [selectedType, setSelectedType] = useState(null);
@@ -14,8 +12,8 @@ export default function RegisterFormUserAccountType({nextStep, setUserData, user
     }
 
     return (
-        <div className="Form_UserAccountType">
-            <h1>Tipo de conta</h1>
+        <div className="flex flex-col items-center">
+            <h1 className='text-2xl font-black text-purple-700 font-mono py-5'>Tipo de conta</h1>
             <div className='Form_UserAccountType_Container'>
                 <button className={`Form_UserAccountType__Estudante ${selectedType === 'estudante' ? 'selected' : ''}`} onClick={() => handleTypeSelection('estudante')}>
                     <FontAwesomeIcon icon={faPenRuler} size="2xl" />
@@ -28,7 +26,6 @@ export default function RegisterFormUserAccountType({nextStep, setUserData, user
             </div>
             <div className='Form_UserAccountType_Footer'>
                 <button onClick={nextStep}>Continuar</button>
-                <p>Já tem uma conta? <Link to={"/loginform"}>Fazer login</Link></p>
             </div>
         </div>
     )

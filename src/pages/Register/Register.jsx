@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import './Register.scss'
 import RegisterFormUserAccountType from "./RegisterFormUserAccountType/RegisterFormUserAccountType";
 import RegisterFormUserDetails from "./RegisterFormUserDetails/RegisterFormUserDetails";
 
@@ -50,9 +49,8 @@ export default function Register() {
     }
 
     return (
-        <div className="teste">
-            {render()
-            }
+        <div className="bg-white  justify-center flex w-[500px] h-[420px] shadow-md rounded-xl">
+            {render()}
         </div>
     )
 

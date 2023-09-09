@@ -1,7 +1,5 @@
 
 import './RegisterFormUserDetails.scss'
-import { Link } from "react-router-dom";
-
 
 export default function RegisterFormUserDetails({
     nextStep,
@@ -24,11 +22,6 @@ export default function RegisterFormUserDetails({
                 <button onClick={prevStep} className='GoBack_Button'>Voltar</button>
                 <button onClick={nextStep} className='Next_Button'>Continue</button>
             </div>
-            <div className='Form_UserDetails_Footer'>
-                <p>Já tem uma conta? <Link to={"/loginform"}>Fazer login</Link></p>
-
-            </div>
-
         </div>
     )
 }

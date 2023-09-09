@@ -14,11 +14,22 @@ body,
   align-items: center;
   font-family: 'Nunito';
 
+  input {
+    font-family: 'Nunito';
+
+  }
+
+  h1 {
+    font-family: 'Mulish', sans-serif;
+  }
+
 }
 
 body {
   background-color: #E7D2F9;
 }
+
+
 
 
 ::-webkit-input-placeholder {
