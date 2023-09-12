@@ -49,7 +49,7 @@ export default function Register() {
     }
 
     return (
-        <div className="bg-white  justify-center flex w-[500px] h-[420px] shadow-md rounded-xl">
+        <div className="bg-white justify-center flex w-[420px] h-[500px] shadow-md rounded-md border-[1px] border-solid border-white">
             {render()}
         </div>
     )
