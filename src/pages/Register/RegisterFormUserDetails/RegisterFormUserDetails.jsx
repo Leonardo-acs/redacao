@@ -17,7 +17,7 @@ export default function RegisterFormUserDetails({
                     <input
                         required
                         value={userData.name}
-                        onChange={(e) => setUserData({...userData, name: e.target.value.trim()})}
+                        onChange={(e) => setUserData({ ...userData, name: e.target.value.trim() })}
                         class="peer h-full w-full rounded-[7px] border border-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-purple-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                         placeholder=" "
                     />
@@ -29,7 +29,7 @@ export default function RegisterFormUserDetails({
                     <input
                         required
                         value={userData.email}
-                        onChange={(e) => setUserData({...userData, email: e.target.value.trim()})}
+                        onChange={(e) => setUserData({ ...userData, email: e.target.value.trim() })}
                         type='email'
                         class="peer h-full w-full rounded-[7px] border border-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-purple-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                         placeholder=" "
@@ -42,7 +42,7 @@ export default function RegisterFormUserDetails({
                     <input
                         required
                         value={userData.login}
-                        onChange={(e) => setUserData({...userData, login: e.target.value.trim()})}
+                        onChange={(e) => setUserData({ ...userData, login: e.target.value.trim() })}
                         class="peer h-full w-full rounded-[7px] border border-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-purple-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                         placeholder=" "
                     />
@@ -54,7 +54,7 @@ export default function RegisterFormUserDetails({
                     <input
                         type='password'
                         value={userData.password}
-                        onChange={(e) => setUserData({...userData, password: e.target.value})}
+                        onChange={(e) => setUserData({ ...userData, password: e.target.value })}
                         required
                         class="peer h-full w-full rounded-[7px] border border-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-purple-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                         placeholder=" "
@@ -64,14 +64,6 @@ export default function RegisterFormUserDetails({
                     </label>
                 </div>
             </div>
-            {/* <div className='flex justify-end items-end w-full m-10 gap-2'>
-                <button onClick={prevStep} className='text-black bg-white border-[1px] border-solid border-purple-500 rounded-md w-40 h-10 font-bold text-lg cursor-pointer'><FontAwesomeIcon icon={faArrowLeft} /> Voltar</button>
-                <button onClick={nextStep} className='text-white bg-purple-500 border-[1px] border-solid border-purple-500 rounded-md w-40 h-10 font-bold text-lg cursor-pointer'>Continuar</button>
-            </div> */}
-            {/* <div className='flex w-full'>
-                <button onClick={prevStep} className='bg-gray-100 text-white font-bold text-lg cursor-pointer w-40 h-10 border-[1px] border-purple-500 rounded-md'>Voltar</button>
-                <button onClick={nextStep} className='bg-purple-500 text-white font-bold text-lg cursor-pointer w-40 h-10 border-[1px] border-purple-500 rounded-md'>Continuar</button>
-            </div> */}
         </div>
     )
 }
