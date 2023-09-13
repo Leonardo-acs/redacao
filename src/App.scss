@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html,
 body,
 #root,
@@ -9,11 +14,21 @@ body,
   align-items: center;
   font-family: 'Nunito';
 
+  input, button {
+    font-family: 'Nunito';
+  }
+
+  h1 {
+    font-family: 'Mulish', sans-serif;
+  }
+
 }
 
 body {
   background-color: #E7D2F9;
 }
+
+
 
 
 ::-webkit-input-placeholder {

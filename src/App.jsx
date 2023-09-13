@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import RoutesApp from './Routes.jsx'
 
 function App() {
