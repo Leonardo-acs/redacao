@@ -10,7 +10,7 @@ export default function RoutesApp() {
             <Routes>
                 <Route path='/loginform' element={<LoginForm />} />
                 <Route path='/autoregister' element={<Register />} />
-                <Route path='/main' element={<Main />} />
+                <Route path='/' element={<Main />} />
             </Routes>
         </BrowserRouter>
     )
